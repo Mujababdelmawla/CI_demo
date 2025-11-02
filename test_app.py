@@ -1,4 +1,4 @@
-from app import add, divide, multiplication
+from app import add, divide, multiplication,subtraction
 import pytest
 
 def test_add():
@@ -9,6 +9,9 @@ def test_divide():
     
 def test_multiplication():
     assert multiplication(10,2) ==20
+
+def test_subtraction():
+    assert subtraction(300,250) ==50
 
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
