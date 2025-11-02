@@ -8,7 +8,7 @@ def test_divide():
     assert divide(6,3) == 2
     
 def test_multiplication():
-    assert multiplication(10,2) ==5
+    assert multiplication(10,2) ==20
 
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
