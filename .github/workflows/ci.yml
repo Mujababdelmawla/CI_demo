@@ -24,3 +24,12 @@ jobs:
 
     - name: Run the tests
       run: pytest -v
+
+    - name: run build
+      run: python -m bulid
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v4
+      with: 
+        name: bulid
+        path: dist
