@@ -23,8 +23,7 @@ jobs:
         pip install pytest
       
 
-    - name: run the bulid
-      run: python -m bulid
+    
 
     - name: Run the tests
       run: pytest -v
